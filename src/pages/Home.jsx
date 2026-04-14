@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useState } from "react";
 import "./Home.css";
 
 import BgShape from "../assets/home-bg.png";     // background shape image
@@ -16,7 +16,44 @@ import RightGirl from "../assets/service-right.png";
 
 import BulbImg from "../assets/bulb.png";
 
+import { UserCircle2 } from "lucide-react";
+
+const faqData = [
+    {
+        question: "What services does The Soul Solution offer?",
+        answer:
+            "We offer end-to-end digital marketing services including social media management, branding, content creation, performance marketing, and website design — everything your brand needs to grow online."
+    },
+    {
+        question: "How is The Soul Solution different from other agencies?",
+        answer:
+            "We focus on creative strategy, real results, and personalized growth plans instead of one-size-fits-all marketing."
+    },
+    {
+        question: "How long does it take to see results?",
+        answer:
+            "It depends on your goals, but most clients begin noticing momentum within the first few weeks."
+    },
+    {
+        question: "Do you provide customized strategies?",
+        answer:
+            "Yes, every business is unique, so we create custom strategies based on your niche and audience."
+    },
+    {
+        question: "Do you work with small businesses or startups?",
+        answer:
+            "Absolutely. We love helping startups and small businesses grow from the ground up."
+    }
+];
+
 const Home = () => {
+
+    const [openIndex, setOpenIndex] = useState(0);
+
+    const toggleFAQ = (index) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
+
     return (
         <>
             {/* ---------------------------------Top------------------------------------- */}
@@ -202,6 +239,106 @@ const Home = () => {
                                 Not an agency, an extension of your brand.
                                 We grow with you, not just for you.
                             </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            {/*--------------------------------------- FAQ---------------------------- */}
+
+            <section className="faq-section">
+                <div className="faq-container">
+
+                    <h1 className="faq-heading">FAQ</h1>
+
+                    <div className="faq-list">
+                        {faqData.map((item, index) => (
+                            <div
+                                className={`faq-item ${openIndex === index ? "active" : ""}`}
+                                key={index}
+                            >
+                                <button
+                                    className="faq-question"
+                                    onClick={() => toggleFAQ(index)}
+                                >
+                                    <span>{item.question}</span>
+                                    <span className="faq-icon">
+                                        {openIndex === index ? "−" : "+"}
+                                    </span>
+                                </button>
+
+                                <div
+                                    className={`faq-answer ${openIndex === index ? "show" : ""
+                                        }`}
+                                >
+                                    <p>{item.answer}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                </div>
+            </section>
+
+            {/*------------------------------------ Testimonial-------------------------- */}
+
+            <section className="t-section">
+                <div className="t-container">
+
+                    <h1 className="t-heading">Testimonials</h1>
+
+                    <div className="t-list">
+
+                        {/* Card 1 */}
+                        <div className="t-card left-t">
+                            <div className="t-profile">
+                                <UserCircle2 size={68} strokeWidth={1.5} />
+                            </div>
+
+                            <div className="t-content">
+                                <h2>Priya Mehta, Business Owner</h2>
+                                <p>
+                                    “They understood what your brand needs.”
+                                    <br />
+                                    No copy-paste strategies — everything felt
+                                    tailored and intentional.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Card 2 */}
+                        <div className="t-card right-t">
+                            <div className="t-content">
+                                <h2>Rohit Singh, Startup Founder</h2>
+                                <p>
+                                    “We saw actual growth, not just promises.”
+                                    <br />
+                                    Within weeks, our reach and conversions improved
+                                    significantly. Highly recommend their approach.
+                                </p>
+                            </div>
+
+                            <div className="t-profile">
+                                <UserCircle2 size={68} strokeWidth={1.5} />
+                            </div>
+                        </div>
+
+                        {/* Card 3 */}
+                        <div className="t-card left-t">
+                            <div className="t-profile">
+                                <UserCircle2 size={68} strokeWidth={1.5} />
+                            </div>
+
+                            <div className="t-content">
+                                <h2>Neha Deol, Brand Owner</h2>
+                                <p>
+                                    “Real growth. Real strategy. Real results.”
+                                    <br />
+                                    Loved working with The Soul Solution —
+                                    highly professional and creative.
+                                </p>
+                            </div>
                         </div>
 
                     </div>

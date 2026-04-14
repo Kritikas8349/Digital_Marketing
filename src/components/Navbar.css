@@ -14,7 +14,7 @@ body{
 
 /* Wrapper with Full Image (waves included) */
 .navbar-wrapper{
-  width:102%;
+  width:100%;
   position:relative;
   background-image:url("../assets/navbar-bg.png");
   background-size:100% 100%;
