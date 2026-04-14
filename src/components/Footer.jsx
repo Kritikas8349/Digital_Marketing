@@ -14,9 +14,10 @@ import {
 import logo1 from "../assets/Logo_o.png"
 
 const Footer = () => {
-    return (
+    return (    
         <>
-            {/*------------------------------------- Top------------------------------ */}
+            {/*------------------------------------- Top ------------------------------ */}
+
             <section className="top-section">
                 <div className="top-container">
 
@@ -90,7 +91,8 @@ const Footer = () => {
                 </div>
             </section>
 
-            {/* Bottom */}
+            {/*----------------------------------- Bottom -----------------------------*/}
+
             <footer className="footer">
 
                 {/* TOP SECTION */}
