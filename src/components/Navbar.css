@@ -17,16 +17,16 @@ body{
   width:100%;
   position:relative;
   background-image:url("../assets/navbar-bg.png");
-  background-size:100% 100%;
+  background-size:110% 100%;
   background-position:center;
   background-repeat:no-repeat;
-  min-height:110px;
+  min-height:100px;
   background-color: #FDECD8;
 }
 
 /* Navbar Main */
 .navbar{
-  max-width:1400px;
+  max-width:1500px; 
   margin:auto;
   height:78px;
   display:flex;

@@ -23,7 +23,7 @@ const Footer = () => {
                     {/* Left Side */}
                     <div className="top-left">
                         <h1 className="top-heading">
-                            Let’s talk <br />
+                            Let’s talk 
                             about <br />
                             everything!
                         </h1>

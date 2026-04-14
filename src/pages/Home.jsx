@@ -6,9 +6,9 @@ import BgShape from "../assets/home-bg.png";     // background shape image
 import HeroRight from "../assets/hero-right.png"; // full right side single image
 
 // import AboutBg from "../assets/about-bg.png";     // background image
-import Girl1 from "../assets/about-girl-1.png";   // left top icon
-import Phone from "../assets/about-phone.png";    // right center icon
-import Girl2 from "../assets/about-girl-2.png";   // left bottom icon\
+import about1 from "../assets/about1.png";   // left top icon
+import about2 from "../assets/about2.png";    // right center icon
+import about3 from "../assets/about3.png";   // left bottom icon\
 
 import CenterGirl from "../assets/service-center.png";
 import LeftGirl from "../assets/service-left.png";
@@ -81,58 +81,43 @@ const Home = () => {
 
             {/* ---------------------------------About------------------------------------ */}
 
-            <section className="about-section">
-                {/* <img src={AboutBg} alt="" className="about-bg" /> */}
+            <section className="about">
 
-                <div className="about-container">
+                <h2 className="about-title">ABOUT THE SOUL SOLUTION</h2>
 
-                    {/* Heading */}
-                    <div className="about-heading">
-                        ABOUT THE SOUL SOLUTION
+                {/* Row 1 */}
+                <div className="about-row">
+                    <div className="card">
+                        <img src={about1} alt="about1" />
+                    </div>
+                    <div className="text right">
+                        <h3>Creators of Digital Excellence</h3>
+                        <p>At SoulsSolution, we blend creativity with strategy to craft impactful digital experiences.</p>
+                    </div>
+                </div>
+
+                {/* Row 2 */}
+                <div className="about-row reverse">
+                    <div className="text left">
+                        <h3>Innovating the Digital Space</h3>
+                        <p>
+                            We push boundaries with innovation to keep your brand ahead in the digital world
+                        </p>
                     </div>
 
-                    {/* Desktop Layout */}
-                    <div className="about-grid">
+                    <div className="card">
+                        <img src={about2} alt="about2" />
+                    </div>
+                </div>
 
-                        {/* Row 1 */}
-                        <div className="about-card image-box left-img">
-                            <img src={Girl1} alt="Girl Icon" />
-                        </div>
-
-                        <div className="about-card text-box">
-                            <h2>Creators of Digital Excellence</h2>
-                            <p>
-                                At SoulSolution, we blend creativity with strategy
-                                to craft impactful digital experiences.
-                            </p>
-                        </div>
-
-                        {/* Row 2 */}
-                        <div className="about-card text-box">
-                            <h2>Innovating the Digital Space</h2>
-                            <p>
-                                We push boundaries with innovation to keep your
-                                brand ahead in the digital world
-                            </p>
-                        </div>
-
-                        <div className="about-card image-box phone-box">
-                            <img src={Phone} alt="Phone Icon" />
-                        </div>
-
-                        {/* Row 3 */}
-                        <div className="about-card image-box bulb-box">
-                            <img src={Girl2} alt="Mission Icon" />
-                        </div>
-
-                        <div className="about-card text-box">
-                            <h2>Your Growth, Our Mission</h2>
-                            <p>
-                                Your growth defines our success. We deliver
-                                results-driven digital solutions that create real impact.
-                            </p>
-                        </div>
-
+                {/* Row 3 */}
+                <div className="about-row">
+                    <div className="card">
+                        <img src={about3} alt="about3" />
+                    </div>
+                    <div className="text right">
+                        <h3>Your Growth, Our Mission</h3>
+                        <p>Your growth defines our success. We deliver results driven digital solutions that create real impact.</p>
                     </div>
                 </div>
             </section>
