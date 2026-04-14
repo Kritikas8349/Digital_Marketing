@@ -160,8 +160,9 @@ body {
 @media(max-width:420px) {
 
     .home-left h1 {
-        font-size: 34px;
+        font-size: 58px;
         margin-top: 170px;
+        line-height: 0.8;
     }
 
     .bg-shape {
@@ -171,7 +172,8 @@ body {
     .home-btn {
         width: 170px;
         height: 42px;
-        font-size: 22px;
+        font-size: 30px;
+        margin-bottom: 18px;
     }
 
     .hero-right-img {
