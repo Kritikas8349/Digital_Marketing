@@ -1,7 +1,7 @@
-// Navbar.jsx
 import React, { useState } from "react";
 import "./Navbar.css";
 import Logo from "../assets/Logo_o.png";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,50 +9,63 @@ const Navbar = () => {
   return (
     <header className="navbar-wrapper">
       <nav className="navbar">
+
         {/* Logo */}
         <div className="navbar-logo">
-          <img
-            src={Logo}
-            alt="Soul & Solution"
-            className="logo-img"
-          />
+          <img src={Logo} alt="Soul & Solution" className="logo-img" />
         </div>
 
         {/* Desktop Menu */}
         <ul className="nav-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/">Services</a></li>
-          <li><a href="/">About Us</a></li>
-          <li><a href="/">Contact Us</a></li>
+          <li>
+            <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/services" className={({ isActive }) => isActive ? "active" : ""}>
+              Services
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""}>
+              About Us
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>
+              Contact Us
+            </NavLink>
+          </li>
         </ul>
 
         {/* Button */}
         <button className="contact-btn">Get in touch</button>
 
-        {/* Mobile Icon */}
+        {/* Hamburger */}
         <div
-          className="menu-icon"
+          className={`menu-icon ${menuOpen ? "open" : ""}`}
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          ☰
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </nav>
 
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="mobile-menu">
-          <a href="/">Home</a>
-          <a href="/">Services</a>
-          <a href="/">About Us</a>
-          <a href="/">Contact Us</a>
+          <NavLink to="/" onClick={() => setMenuOpen(false)}>Home</NavLink>
+          <NavLink to="/services" onClick={() => setMenuOpen(false)}>Services</NavLink>
+          <NavLink to="/about" onClick={() => setMenuOpen(false)}>About Us</NavLink>
+          <NavLink to="/contact" onClick={() => setMenuOpen(false)}>Contact Us</NavLink>
+
           <button className="contact-btn mobile-btn">
             Get in touch
           </button>
         </div>
       )}
-
-      {/* Bottom Wave */}
-      <div className="wave-shape"></div>
     </header>
   );
 };

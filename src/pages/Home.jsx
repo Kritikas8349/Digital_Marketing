@@ -1,5 +1,5 @@
 
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./Home.css";
 
 import BgShape from "../assets/home-bg.png";     // background shape image
@@ -16,7 +16,11 @@ import RightGirl from "../assets/service-right.png";
 
 import BulbImg from "../assets/bulb.png";
 
-import { UserCircle2 } from "lucide-react";
+import testimonial1 from "../assets/testimonial1.png";
+import testimonial2 from "../assets/testimonial2.png";
+import testimonial3 from "../assets/testimonial3.png";
+
+
 
 const faqData = [
     {
@@ -47,6 +51,43 @@ const faqData = [
 ];
 
 const Home = () => {
+
+    /*-------------------bulb animation------------------------ */
+
+    useEffect(() => {
+        const bulb = document.querySelector(".w-bulb");
+    
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    bulb.classList.add("show");
+                }
+            },
+            { threshold: 0.3 }
+        );
+    
+        if (bulb) observer.observe(bulb);
+    
+        return () => {
+            if (bulb) observer.unobserve(bulb);
+        };
+    }, []);
+
+    /*----------------------------slider---------------------------------*/ 
+
+    const [current, setCurrent] = useState(1);
+
+    const prevSlide = () => {
+        setCurrent((prev) => (prev === 0 ? 2 : prev - 1));
+    };
+
+    const nextSlide = () => {
+        setCurrent((prev) => (prev === 2 ? 0 : prev + 1));
+    };
+
+
+
+    /*-------------------------------faqs-------------------------------*/
 
     const [openIndex, setOpenIndex] = useState(0);
 
@@ -125,55 +166,61 @@ const Home = () => {
             {/* ---------------------------------Service---------------------------------- */}
 
             <section className="services-section">
-                <div className="services-container">
+            <div className="services-container">
 
-                    <h1 className="services-heading">OUR SERVICES</h1>
+                <h1 className="services-heading">OUR SERVICES</h1>
 
-                    <div className="services-grid">
+                <div className="services-grid">
 
-                        {/* Left Card */}
-                        <div className="service-card small-card">
-                            <h2>SEO</h2>
-                            <p>
-                                Our strategies and tailored strategies, we drive
-                                meaningful results and long-term success.
-                            </p>
+                    {/* Left Button */}
+                    <button className="nav-btn left" onClick={prevSlide}>‹</button>
 
-                            <div className="service-img-box left-img">
-                                <img src={LeftGirl} alt="SEO Girl" />
-                            </div>
+                    {/* Card 1 */}
+                    <div className={`service-card small-card ${current === 0 ? "active" : "side"}`}>
+                        <h2>SEO</h2>
+                        <p>
+                            Our strategies and tailored strategies, we drive
+                            meaningful results and long-term success.
+                        </p>
+
+                        <div className="service-img-box left-img">
+                            <img src={LeftGirl} alt="SEO Girl" />
                         </div>
-
-                        {/* Center Card */}
-                        <div className="service-card center-card">
-                            <h2>Social Media Management</h2>
-                            <p>
-                                Our goal is simple to help your brand grow.
-                                Through strong partnerships and tailored strategies,
-                                we drive meaningful results and long-term success
-                            </p>
-
-                            <div className="service-img-box center-img">
-                                <img src={CenterGirl} alt="Social Media Girl" />
-                            </div>
-                        </div>
-
-                        {/* Right Card */}
-                        <div className="service-card small-card">
-                            <h2>Web Development</h2>
-                            <p>
-                                Our goal is simple to help your brand grow.
-                                Through strong partnerships and strategies.
-                            </p>
-
-                            <div className="service-img-box right-img">
-                                <img src={RightGirl} alt="Web Girl" />
-                            </div>
-                        </div>
-
                     </div>
+
+                    {/* Card 2 */}
+                    <div className={`service-card center-card ${current === 1 ? "active" : "side"}`}>
+                        <h2>Social Media Management</h2>
+                        <p>
+                            Our goal is simple to help your brand grow.
+                            Through strong partnerships and tailored strategies,
+                            we drive meaningful results and long-term success
+                        </p>
+
+                        <div className="service-img-box center-img">
+                            <img src={CenterGirl} alt="Social Media Girl" />
+                        </div>
+                    </div>
+
+                    {/* Card 3 */}
+                    <div className={`service-card small-card ${current === 2 ? "active" : "side"}`}>
+                        <h2>Web Development</h2>
+                        <p>
+                            Our goal is simple to help your brand grow.
+                            Through strong partnerships and strategies.
+                        </p>
+
+                        <div className="service-img-box right-img">
+                            <img src={RightGirl} alt="Web Girl" />
+                        </div>
+                    </div>
+
+                    {/* Right Button */}
+                    <button className="nav-btn right" onClick={nextSlide}>›</button>
+
                 </div>
-            </section>
+            </div>
+        </section>
 
             {/*------------------------------ why choose us ---------------------------------*/}
 
@@ -278,7 +325,7 @@ const Home = () => {
                         {/* Card 1 */}
                         <div className="t-card left-t">
                             <div className="t-profile">
-                                <UserCircle2 size={68} strokeWidth={1.5} />
+                                <img src={testimonial1} alt="Priya Mehta" />
                             </div>
 
                             <div className="t-content">
@@ -305,14 +352,14 @@ const Home = () => {
                             </div>
 
                             <div className="t-profile">
-                                <UserCircle2 size={68} strokeWidth={1.5} />
+                                <img src={testimonial2} alt="Rohit Singh" />
                             </div>
                         </div>
 
                         {/* Card 3 */}
                         <div className="t-card left-t">
                             <div className="t-profile">
-                                <UserCircle2 size={68} strokeWidth={1.5} />
+                                <img src={testimonial3} alt="Neha Deol" />
                             </div>
 
                             <div className="t-content">

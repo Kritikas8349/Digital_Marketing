@@ -108,17 +108,69 @@ body {
 @media(max-width:1024px) {
 
     .home-left h1 {
-        font-size: 56px;
+        font-size: 88px;
     }
 
     .home-btn {
         width: 220px;
         height: 60px;
-        font-size: 26px;
+        font-size: 44px;
     }
 
     .hero-right-img {
         max-width: 500px;
+    }
+
+    .bg-shape {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+        z-index: 1;
+    }
+}
+
+
+@media (max-width: 1000px) and (min-width: 769px) {
+
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        gap: 25px;
+        padding: 30px 30px;
+    }
+
+    .home-left {
+        margin-left: 0;
+        margin-top: 0;
+        /* ❌ remove negative shift */
+    }
+
+    .home-left h1 {
+        font-size: 90px;
+        line-height: 0.8;
+        width: 100%;
+    }
+
+    .home-btn {
+        width: 200px;
+        font-size: 38px;
+        margin-top: 20px;
+    }
+
+    .home-right {
+        margin-top: -10px;
+    }
+
+    .hero-right-img {
+        max-width: 420px;
+        width: 100%;
+    }
+
+    .bg-shape {
+        height: 95%;
     }
 }
 
@@ -140,14 +192,14 @@ body {
     }
 
     .home-left h1 {
-        font-size: 42px;
-        line-height: 1.08;
+        font-size: 78px;
+        line-height: 0.8;
     }
 
     .home-btn {
         width: 210px;
         height: 56px;
-        font-size: 24px;
+        font-size: 38px;
         margin-top: 18px;
     }
 
@@ -161,9 +213,10 @@ body {
 @media(max-width:480px) {
 
     .home-left h1 {
-        font-size: 74px;
+        font-size: 68px;
         /* margin-top: 30px; */
         line-height: 0.6;
+        padding: 20px;
     }
 
     .bg-shape {
@@ -191,266 +244,273 @@ body {
 .about {
     background: #ffffff;
     padding: 0 20px 80px;
-  }
-  
-  /* Title */
-  .about-title {
+}
+
+/* Title */
+.about-title {
     display: block;
     width: fit-content;
     margin: 0 auto 40px;
-  
+
     font-family: 'Anton', sans-serif;
     font-size: 52px;
     font-weight: 800;
-  
+
     color: #fff;
     padding: 0 18px;
-  
+
     -webkit-text-stroke: 12px #f4aa00;
     paint-order: stroke fill;
-  }
-  
-  /* ROW */
-  .about-row {
+}
+
+/* ROW */
+.about-row {
     max-width: 1100px;
     margin: 0 auto 20px;
-  
+
     display: flex;
     align-items: center;
     gap: 80px;
-  }
-  
-  /* CARD */
-  .card {
+}
+
+/* CARD */
+.card {
     width: 280px;
     height: 230px;
     border: 2px solid #f4aa00;
     border-radius: 12px;
-  
+
     flex-shrink: 0;
-  }
-  
-  /* TEXT */
-  .text {
+}
+
+/* TEXT */
+.text {
     max-width: 650px;
-  }
-  
-  /* 🔥 ALIGNMENT FIX */
-  
-  /* Row 1 & 3 → push text right */
-  .about-row .text.right {
-    margin-left: auto;   /* 🔥 pushes text to right */
+}
+
+/* 🔥 ALIGNMENT FIX */
+
+/* Row 1 & 3 → push text right */
+.about-row .text.right {
+    margin-left: auto;
+    /* 🔥 pushes text to right */
     text-align: right;
-  }
-  
-  /* Row 2 → push image right */
-  .about-row.reverse {
+}
+
+/* Row 2 → push image right */
+.about-row.reverse {
     flex-direction: row;
-  }
-  
-  .about-row.reverse .card {
-    margin-left: auto;   /* 🔥 pushes image to right */
-  }
-  
-  .about-row.reverse .text {
+}
+
+.about-row.reverse .card {
+    margin-left: auto;
+    /* 🔥 pushes image to right */
+}
+
+.about-row.reverse .text {
     text-align: left;
-  }
-  
-  /* HEADINGS */
-  .text h3 {
+}
+
+/* HEADINGS */
+.text h3 {
     font-family: 'Jomhuria', cursive;
     font-size: 58px;
     margin-bottom: 10px;
     font-weight: 500;
-  }
-  
-  /* PARAGRAPH */
-  .text p {
+}
+
+/* PARAGRAPH */
+.text p {
     font-family: 'Kite One', sans-serif;
     font-size: 20px;
     line-height: 1.5;
-  }
+}
 
-  .card img {
+.card img {
     width: 100%;
     height: 100%;
-    object-fit: contain;   /* keeps image inside box */
-  }
+    object-fit: contain;
+    /* keeps image inside box */
+}
 
 
-  /*----------------- RESPONSIVE DESIGN ---------------------*/
+/*----------------- RESPONSIVE DESIGN ---------------------*/
 
 /* 📱 SMALL MOBILE (iPhone SE etc) */
 @media (max-width: 576px) {
 
     .about {
-      padding: 20px 18px 50px;
+        padding: 20px 18px 50px;
+        margin-top: -80px;
     }
-  
+
     .about-title {
-      font-size: 37px;
-      -webkit-text-stroke: 9px #f4aa00;
-      text-align: center;
-      line-height: 1.2;
+        font-size: 37px;
+        -webkit-text-stroke: 9px #f4aa00;
+        text-align: center;
+        line-height: 1.2;
     }
-  
+
     .about-row {
-      flex-direction: column;
-      align-items: center;
-      gap: 25px;
-      margin-bottom: 40px;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        margin-bottom: 40px;
     }
-  
+
     /* remove zig-zag */
     .about-row.reverse .card {
-      margin-left: 0;
+        margin-left: 0;
     }
-  
+
     .about-row .text.right,
     .about-row .text.left {
-      text-align: center;
-      margin-left: 0;
+        text-align: center;
+        margin-left: 0;
     }
-  
-    .card {
-      width: 100%;
-      max-width: 260px;
-      height: auto;
-      padding: 10px;
-    }
-  
-    .card img {
-      height: auto;
-    }
-  
-    .text {
-      max-width: 100%;
-    }
-  
-    .text h3 {
-      font-size: 46px;
-      /* margin-bottom: -5px; */
-      line-height: .6;
-    }
-  
-    .text p {
-      font-size: 16px;
-      margin-top: 15px;
-    }
-  }
-  
-  
-  /* 📱 LARGE MOBILE */
-  @media (min-width: 577px) and (max-width: 768px) {
-  
-    .about {
-      padding: 20px 16px 60px;
-    }
-  
-    .about-title {
-      font-size: 32px;
-      -webkit-text-stroke: 5px #f4aa00;
-    }
-  
-    .about-row {
-      flex-direction: column;
-      gap: 30px;
-    }
-  
-    .about-row .text {
-      text-align: center;
-    }
-  
-    .card {
-      width: 260px;
-      height: auto;
-    }
-  
-    .text h3 {
-      font-size: 36px;
-    }
-  
-    .text p {
-      font-size: 15px;
-    }
-  }
-  
-  
-  /* 💻 TABLET */
-  @media (min-width: 769px) and (max-width: 992px) {
-  
-    .about {
-      padding: 30px 30px 70px;
-    }
-  
-    .about-row {
-      gap: 40px;
-    }
-  
-    .card {
-      width: 220px;
-      height: 180px;
-    }
-  
-    .text {
-      max-width: 500px;
-    }
-  
-    .text h3 {
-      font-size: 42px;
-    }
-  
-    .text p {
-      font-size: 16px;
-    }
-  }
-  
-  
-  /* 💻 SMALL LAPTOP */
-  @media (min-width: 993px) and (max-width: 1200px) {
-  
-    .about-row {
-      gap: 60px;
-    }
-  
-    .text {
-      max-width: 600px;
-    }
-  }
 
-  /* 📱 MOBILE FIX (IMAGE ALWAYS FIRST) */
+    .card {
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+        padding: 10px;
+    }
+
+    .card img {
+        height: auto;
+    }
+
+    .text {
+        max-width: 100%;
+    }
+
+    .text h3 {
+        font-size: 46px;
+        /* margin-bottom: -5px; */
+        line-height: .6;
+    }
+
+    .text p {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+}
+
+
+/* 📱 LARGE MOBILE */
+@media (min-width: 577px) and (max-width: 768px) {
+
+    .about {
+        padding: 20px 16px 60px;
+    }
+
+    .about-title {
+        font-size: 48px;
+        -webkit-text-stroke: 12px #f4aa00;
+    }
+
+    .about-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-row .text {
+        text-align: center;
+    }
+
+    .card {
+        width: 260px;
+        height: auto;
+    }
+
+    .text h3 {
+        font-size: 36px;
+    }
+
+    .text p {
+        font-size: 15px;
+    }
+}
+
+
+/* 💻 TABLET */
+@media (min-width: 769px) and (max-width: 992px) {
+
+    .about {
+        padding: 30px 30px 70px;
+        margin-top: -50px;
+    }
+
+    .about-row {
+        gap: 40px;
+    }
+
+    .card {
+        width: 220px;
+        height: 180px;
+    }
+
+    .text {
+        max-width: 500px;
+    }
+
+    .text h3 {
+        font-size: 42px;
+    }
+
+    .text p {
+        font-size: 16px;
+    }
+}
+
+
+/* 💻 SMALL LAPTOP */
+@media (min-width: 993px) and (max-width: 1200px) {
+
+    .about-row {
+        gap: 60px;
+    }
+
+    .text {
+        max-width: 600px;
+    }
+}
+
+/* 📱 MOBILE FIX (IMAGE ALWAYS FIRST) */
 @media (max-width: 768px) {
 
     .about-row,
     .about-row.reverse {
-      flex-direction: column;
-      align-items: center;
-      gap: 25px;
-      padding: 0px 18px;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 0px 18px;
     }
-  
+
     /* 🔥 FORCE ORDER */
     .card {
-      order: 1;   /* image first */
+        order: 1;
+        /* image first */
     }
-  
+
     .text {
-      order: 2;   /* text second */
-      text-align: center;
-      margin-left: 0 !important;
+        order: 2;
+        /* text second */
+        text-align: center;
+        margin-left: 0 !important;
     }
-  
+
     /* remove reverse effects */
     .about-row.reverse .card {
-      margin-left: 0 !important;
+        margin-left: 0 !important;
     }
-  
-  }
+
+}
 
 
 
 
-/*--------------sercives-------------------*/
+/*--------------services-------------------*/
 .services-section {
     width: 100%;
     background: #FDECD8;
@@ -475,12 +535,18 @@ body {
     margin-bottom: 28px;
 }
 
-/* Grid */
+/* Grid (DESKTOP NORMAL) */
 .services-grid {
     display: grid;
     grid-template-columns: 1fr 1.55fr 1fr;
     gap: 28px;
     align-items: center;
+    position: relative;
+}
+
+/* ❌ Hide arrows on desktop */
+.nav-btn {
+    display: none;
 }
 
 /* Cards */
@@ -491,6 +557,14 @@ body {
     position: relative;
     overflow: hidden;
     text-align: center;
+    transition: all 0.4s ease;
+}
+
+/* Reset slider effects on desktop */
+.service-card.active,
+.service-card.side {
+    transform: none;
+    opacity: 1;
 }
 
 /* Small cards */
@@ -503,13 +577,12 @@ body {
 .center-card {
     min-height: 560px;
     padding: 18px 24px 0;
-
 }
 
+/* Text */
 .service-card h2 {
     font-family: 'Jomhuria', cursive;
     font-size: 58px;
-    /* line-height: 1.05; */
     font-weight: 500;
     color: #111;
     margin-bottom: 8px;
@@ -535,7 +608,7 @@ body {
     margin-top: -15px;
 }
 
-/* Image Space */
+/* Image */
 .service-img-box {
     position: absolute;
     left: 0;
@@ -550,7 +623,6 @@ body {
     object-fit: contain;
 }
 
-/* Specific Images */
 .left-img img {
     max-width: 240px;
 }
@@ -563,7 +635,7 @@ body {
     max-width: 230px;
 }
 
-/* Tablet */
+/* Tablet (still NORMAL layout) */
 @media(max-width:1024px) {
 
     .services-heading {
@@ -591,8 +663,7 @@ body {
     }
 }
 
-/* Mobile */
-/* ===== Mobile Exact Design ===== */
+/* ================= MOBILE SLIDER ================= */
 @media(max-width:768px) {
 
     .services-section {
@@ -602,72 +673,67 @@ body {
 
     .services-heading {
         font-size: 48px;
-        line-height: 1;
         margin-bottom: 22px;
-        -webkit-text-stroke: 1px #f4aa00;
     }
 
-    /* Single card center */
+    /* Slider layout */
     .services-grid {
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
     }
 
-    /* Hide side cards on mobile */
-    .services-grid .service-card:nth-child(1),
-    .services-grid .service-card:nth-child(3) {
+    /* SHOW arrows only on mobile */
+    .nav-btn {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #f4aa00;
+        border: none;
+        font-size: 28px;
+        padding: 6px 12px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .nav-btn.left {
+        left: 0;
+    }
+
+    .nav-btn.right {
+        right: 0;
+    }
+
+    /* Hide side cards */
+    .service-card.side {
         display: none;
     }
 
-    /* Center card exact */
-    .center-card {
+    /* Active card */
+    .service-card.active {
+        display: block;
         width: 100%;
         max-width: 320px;
         min-height: 450px;
-        border-radius: 22px;
-        padding: 14px 14px 0;
-        position: relative;
         margin: auto;
+        transform: scale(1);
+        opacity: 1;
     }
 
     .center-card h2 {
-        font-size: 45px;
-        line-height: 1.05;
-        margin-bottom: 6px;
+        font-size: 58px;
+        line-height: 0.7;
+        margin-bottom: 20px;
     }
 
     .center-card p {
         font-size: 16px;
-        line-height: 1.35;
-        max-width: 92%;
     }
 
     .center-img img {
-        max-width: 280px;
-    }
-
-    /* Side arrows */
-    .services-grid::before,
-    .services-grid::after {
-        content: "›";
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 42px;
-        color: #f4aa00;
-        font-weight: 300;
-        z-index: 5;
-    }
-
-    .services-grid::before {
-        content: "‹";
-        left: 0;
-    }
-
-    .services-grid::after {
-        right: 0;
+        max-width: 200px;
     }
 }
 
@@ -693,9 +759,36 @@ body {
     width: 180px;
 }
 
+/* ===== Bulb Animation ===== */
 .w-bulb img {
-    width: 100%;
+    width: 120%;
     object-fit: contain;
+}
+
+.w-bulb {
+    opacity: 0;
+    transform: translateY(-120px);
+    transition: all 0.18s ease;
+}
+
+.w-bulb.show {
+    opacity: 1;
+    transform: translateY(0);
+    animation: bulbDrop 0.8s ease;
+}
+
+@keyframes bulbDrop {
+    0% {
+        transform: translateY(-120px);
+    }
+
+    70% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .w-heading {
@@ -1076,7 +1169,7 @@ body {
 /* Left overlap */
 .left-t .t-profile {
     position: absolute;
-    left: -6px;
+    left: 0px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -1084,7 +1177,7 @@ body {
 /* Right overlap */
 .right-t .t-profile {
     position: absolute;
-    right: -6px;
+    right: 0px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -1127,6 +1220,15 @@ body {
     text-align: left;
 }
 
+.t-profile img {
+    width: 140%;
+    height: 140%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    border: 6px solid #f4aa00;
+}
+
 /* Tablet */
 @media(max-width:1024px) {
 
@@ -1160,7 +1262,7 @@ body {
         margin-top: 30px;
         font-size: 30px;
         -webkit-text-stroke: 9px #f4aa00;
-       
+
     }
 
     .t-list {
@@ -1220,4 +1322,3 @@ body {
         line-height: 16px;
     }
 }
-
