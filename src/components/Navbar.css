@@ -203,12 +203,12 @@
   }
 
   .mobile-menu a {
-    font-family: 'Jomhuria', cursive;
-    font-weight: 500;
+    font-family: 'Kite One', cursive;
+    font-weight: 600;
     text-decoration: none;
     color: #111;
-    font-size: 38px;
-    font-weight: 500;
+    font-size: 16px;
+    
   }
 
   .mobile-btn {

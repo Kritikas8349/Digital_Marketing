@@ -33,11 +33,12 @@ const Footer = () => {
                             We are open to any suggestion or
                             just have a chat
                         </p>
-
                         <div className="top-img-box">
                             <img src={HandImg} alt="Hand" className="top-img" />
                         </div>
+
                     </div>
+                    
 
                     {/* Right Side */}
                     <div className="top-right">

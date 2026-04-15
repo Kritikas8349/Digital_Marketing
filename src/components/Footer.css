@@ -161,7 +161,7 @@
     /* 🔥 IMPORTANT: form ko full width hi rehne do */
     .top-form {
         width: 100%;
-        margin-top: 10px;
+        /* margin-top: -31px; */
     }
 }
 /* Mobile */
@@ -181,22 +181,24 @@
 
     .top-heading {
         font-size: 42px;
-        line-height: 0.95;
+        line-height: 0.65;
         /* margin-bottom: 8px; */
-        text-align: center;  /* 🔥 ensure center */
+        text-align: start;  /* 🔥 ensure center */
         margin: 0 auto 8px;
+        margin-left: 10px;
     }
 
     .top-subtext {
         font-size: 14px;
         max-width: 210px;
-        text-align: center;  /* optional but better UI */
+        text-align: start;  /* optional but better UI */
         margin: 0 auto;
+        margin-left: 10px;
     }
 
     .top-img-box {
         position: absolute;
-        top: 0;
+        top: -47px;
         right: 0;
         margin-top: 0;
     }
@@ -234,10 +236,19 @@
     .top-heading {
         line-height: 0.53;
         font-size: 54px;
+        text-align: start;
+        margin-left: 10px;
+    }
+    .top-subtext {
+        font-size: 14px;
+        max-width: 210px;
+        text-align: start;  /* optional but better UI */
+        margin: 0 auto;
+        margin-left: 10px;
     }
 
     .top-img {
-        margin-top: -33px;
+        margin-top: -28px;
         max-width: 150px;
     }
 
