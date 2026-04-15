@@ -229,7 +229,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
+            
             {/*--------------------------------------- FAQ---------------------------- */}
 
             <section className="faq-section">
