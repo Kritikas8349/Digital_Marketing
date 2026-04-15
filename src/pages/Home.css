@@ -259,7 +259,7 @@ body {
     color: #fff;
     padding: 0 18px;
 
-    -webkit-text-stroke: 12px #f4aa00;
+    -webkit-text-stroke: 18px #f4aa00;
     paint-order: stroke fill;
 }
 
@@ -340,7 +340,7 @@ body {
 @media (max-width: 576px) {
 
     .about {
-        padding: 20px 18px 50px;
+        padding: 20px 18px 30px;
         margin-top: -80px;
     }
 
