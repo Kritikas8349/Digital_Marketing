@@ -793,7 +793,7 @@ body {
 
     .w-bulb {
         width: 90px;
-        left: 0;
+        left: -10px;
         top: -18px;
     }
 
