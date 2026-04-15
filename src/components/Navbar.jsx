@@ -1,8 +1,8 @@
-// Navbar.jsx
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Logo from "../assets/Logo_o.png";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,12 +35,14 @@ const Navbar = () => {
           <button className="contact-btn">Get in touch</button>
         </Link>
 
-        {/* Mobile Icon */}
+        {/* Hamburger */}
         <div
-          className="menu-icon"
+          className={`menu-icon ${menuOpen ? "open" : ""}`}
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          ☰
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </nav>
 
