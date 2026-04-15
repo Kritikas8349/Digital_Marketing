@@ -110,7 +110,7 @@ const Home = () => {
                             <span>Digital Growth</span>
                         </h1>
 
-                        <button className="home-btn">Get in touch</button>
+                        <button className="home-btn">Lets's connect</button>
                     </div>
 
                     {/* Right Side Full Single Image */}

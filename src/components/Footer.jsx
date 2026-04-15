@@ -3,6 +3,7 @@ import React from "react";
 import "./Footer.css";
 import HandImg from "../assets/footer-hand.png";
 
+
 import {
   FaMapMarkerAlt,
   FaPhoneAlt,
@@ -96,94 +97,104 @@ const Footer = () => {
 
             <footer className="footer">
 
-                {/* TOP SECTION */}
-                <div className="footer__container">
+  {/* TOP SECTION */}
+  <div className="footer__container">
 
-                    {/* LOGO */}
-                    <div className="footer__col">
-                        <div className="footer__logo">
-                            <img src={logo1} alt="logo" />
-                        </div>
-                        <p>
-                            Empowering smarter trading with expert
-                            insights and your financial growth in focus.
-                        </p>
-                    </div>
+    {/* LOGO */}
+    <div className="footer__col">
+      <div className="footer__logo">
+        <img src={logo1} alt="logo" />
+      </div>
 
-                    {/* NAVIGATION */}
-                    <div className="footer__col">
-                        <h4>Navigation</h4>
-                        <ul>
-                            <li>Home</li>
-                            <li>About Us</li>
-                            <li>Services</li>
-                            <li>Research</li>
-                        </ul>
-                    </div>
+      <p>
+        Empowering businesses with smart digital marketing,
+        creative branding, and growth-focused strategies.
+      </p>
+    </div>
 
-                    {/* QUICK LINKS */}
-                    <div className="footer__col">
-                        <h4>Quick Link</h4>
-                        <ul>
-                            <li>Contact Us</li>
-                            <li>FAQs</li>
-                            <li>Research</li>
-                            <li>Services</li>
-                        </ul>
-                    </div>
+    {/* NAVIGATION */}
+    <div className="footer__col">
+      <h4>Navigation</h4>
+      <ul>
+        <li onClick={() => window.location.href = "/"}>Home</li>
+        <li onClick={() => window.location.href = "/about"}>About Us</li>
+        <li onClick={() => window.location.href = "/services"}>Services</li>
+        <li onClick={() => window.location.href = "/contact us"}>Contact Us</li>
+      </ul>
+    </div>
 
-                    {/* SERVICES */}
-                    <div className="footer__col">
-                        <h4>Services</h4>
-                        <ul>
-                            <li>Home</li>
-                            <li>Contact</li>
-                            <li>Blog</li>
-                        </ul>
-                    </div>
-                </div>
+    {/* QUICK LINKS */}
+    <div className="footer__col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li onClick={() => window.location.href = "/contact"}>Contact Us</li>
+        <li onClick={() => window.location.href = "/faq"}>FAQs</li>
+        <li onClick={() => window.location.href = "/pricing"}>Pricing</li>
+        <li onClick={() => window.location.href = "/blog"}>Blog</li>
+      </ul>
+    </div>
 
-                {/* BOTTOM SECTION (ALIGNED WITH COLUMNS) */}
-                <div className="footer__bottom">
-                    <div className="footer__bottom-content">
+    {/* SERVICES */}
+    <div className="footer__col">
+      <h4>Services</h4>
+      <ul>
+        <li onClick={() => window.location.href = "/services/seo"}>SEO</li>
+        <li onClick={() => window.location.href = "/services/social-media"}>Social Media</li>
+        <li onClick={() => window.location.href = "/services/web-development"}>Web Development</li>
+        <li onClick={() => window.location.href = "/services/branding"}>Branding</li>
+      </ul>
+    </div>
 
-                        {/* Column 1 */}
-                        <div className="footer__item">
-                            <FaMapMarkerAlt />
-                            <span>USA</span>
-                        </div>
+  </div>
 
-                        {/* Column 2 */}
-                        <div className="footer__item">
-                            <FaPhoneAlt />
-                            <span>(+876) 765 665</span>
-                        </div>
+  {/* BOTTOM SECTION */}
+  <div className="footer__bottom">
+    <div className="footer__bottom-content">
 
-                        {/* Column 3 */}
-                        <div className="footer__item">
-                            <FaEnvelope />
-                            <span>mail@capex.id</span>
-                        </div>
+      {/* Address */}
+      <div className="footer__item">
+        <FaMapMarkerAlt />
+        <span>Bhopal, Madhya Pradesh, India</span>
+      </div>
 
-                        {/* Column 4 */}
-                        <div className="footer__socials">
-                            <FaFacebookF />
-                            <FaTwitter />
-                            <FaYoutube />
-                        </div>
+      {/* Phone */}
+      <div className="footer__item">
+        <FaPhoneAlt />
+        <span>+91 98765 43210</span>
+      </div>
 
-                    </div>
+      {/* Email */}
+      <div className="footer__item">
+        <FaEnvelope />
+        <span>info@thesoulsolution.com</span>
+      </div>
 
-                    {/* DIVIDER */}
-                    <div className="footer__divider"></div>
-                </div>
+      {/* Social */}
+      <div className="footer__socials">
+        <a href="https://facebook.com" target="_blank" rel="noreferrer">
+          <FaFacebookF />
+        </a>
 
-                {/* COPYRIGHT */}
-                <div className="footer__copyright">
-                    © 2026 Capex - All Rights Reserved
-                </div>
+        <a href="https://twitter.com" target="_blank" rel="noreferrer">
+          <FaTwitter />
+        </a>
 
-            </footer>
+        <a href="https://youtube.com" target="_blank" rel="noreferrer">
+          <FaYoutube />
+        </a>
+      </div>
+
+    </div>
+
+    <div className="footer__divider"></div>
+  </div>
+
+  {/* COPYRIGHT */}
+  <div className="footer__copyright">
+    © 2026 TheSoulSolution - All Rights Reserved
+  </div>
+
+</footer>
 
         </>
     );

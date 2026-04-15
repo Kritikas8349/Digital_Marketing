@@ -1,0 +1,506 @@
+/* ===================== About.css ===================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Kite+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* ================= SECTION ================= */
+
+.about-section {
+    /* height: 100vh; */
+    width: 100%;
+    background: #FDECD8;
+    position: relative;
+    overflow: hidden;
+    /* padding: 45px 15px 0; */
+}
+
+/* ================= TOP SHAPE ================= */
+
+.about-top-blob {
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 85px;
+    z-index: 1;
+}
+
+/* ================= CONTAINER ================= */
+
+.about-container {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+/* ================= LEFT CONTENT ================= */
+
+.about-content {
+    flex: 1;
+    max-width: 560px;
+    padding-left: 60px;
+    margin-bottom: -10px;
+}
+
+.about-content h2 {
+    font-family: 'Jomhuria', cursive;
+    font-size: 115px;
+    line-height: 0.7;
+    color: #f4aa00;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.about-content p {
+    font-family: 'Kite One', cursive;
+    font-size: 20px;
+    line-height: 1.42;
+    color: #111;
+    /* font-style: italic; */
+}
+
+/* ================= RIGHT IMAGE ================= */
+
+.about-image-box {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-right-image {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 620px;
+    object-fit: contain;
+}
+
+/* ================= BOTTOM WAVE ================= */
+
+.about-bottom-wave {
+    width: 100%;
+    display: block;
+    margin-top: -175px;
+}
+
+/* ================= LARGE LAPTOP ================= */
+
+@media(max-width:1440px) {
+
+    .about-content h2 {
+        font-size: 105px;
+    }
+
+    .about-content p {
+        font-size: 18px;
+    }
+
+    .about-right-image {
+        max-width: 560px;
+    }
+}
+
+/* ================= LAPTOP ================= */
+
+@media(max-width:1200px) {
+
+    .about-content {
+        margin-left: 20px;
+    }
+
+    .about-content h2 {
+        font-size: 82px;
+    }
+
+    .about-content p {
+        font-size: 18px;
+    }
+
+    .about-right-image {
+        max-width: 500px;
+    }
+
+    .about-bottom-wave {
+        margin-top: -70px;
+    }
+}
+
+/* ================= TABLET ================= */
+
+@media(max-width:992px) {
+
+
+    .about-container {
+        gap: 18px;
+    }
+
+    .about-content {
+        padding-left: 10px;
+    }
+
+    .about-content h2 {
+        font-size: 72px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+        line-height: 1.45;
+    }
+
+    .about-right-image {
+        max-width: 420px;
+    }
+
+    .about-bottom-wave {
+        margin-top: -15px;
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px) {
+
+
+    .about-container {
+        margin-top: 30px;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .about-top-blob {
+        width: 70px;
+    }
+
+    .about-content {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .about-content h2 {
+        font-size: 70px;
+        margin-bottom: 10px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+        line-height: 1.45;
+        max-width: 340px;
+        margin: auto;
+    }
+
+    .about-image-box {
+        justify-content: center;
+    }
+
+    .about-right-image {
+        max-width: 320px;
+        margin-top: 10px;
+    }
+
+    .about-bottom-wave {
+        margin-top: -5px;
+    }
+}
+
+/* ================= SMALL PHONES ================= */
+
+@media(max-width:480px) {
+
+
+    .about-top-blob {
+        width: 55px;
+    }
+
+    .about-content h2 {
+        font-size: 82px;
+        margin-top: 10px;
+    }
+
+    .about-content p {
+        font-size: 12px;
+        max-width: 290px;
+    }
+
+    .about-right-image {
+        max-width: 270px;
+        margin-top: 8px;
+    }
+
+    .about-bottom-wave {
+        margin-top: 0;
+    }
+}
+
+/*---------------------------------------- Who we are------------------------------------------------------------  */
+
+
+.wwa-section {
+    width: 100%;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+/* ================= CONTAINER ================= */
+
+.wwa-container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 30px 15px 0;
+}
+
+/* ================= TOP ================= */
+
+.wwa-top {
+    text-align: center;
+}
+
+.wwa-heading {
+    display: inline-block;
+    font-family: 'Jomhuria', cursive;
+    font-size: 95px;
+    line-height: .65;
+    color: #fff;
+    /* background: #f4aa00; */
+    /* padding: 8px 26px 0; */
+    border-radius: 8px;
+    -webkit-text-stroke: 15px #f4aa00;
+    paint-order: stroke fill;
+}
+
+.wwa-text {
+    max-width: 920px;
+    margin: 22px auto 0;
+    font-family: 'Kite One', cursive;
+    font-size: 18px;
+    line-height: 1.;
+    color: #111;
+    /* font-style: italic; */
+}
+
+/* ================= GRID ================= */
+
+.wwa-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-top: 20px;
+}
+
+/* ================= CARD ================= */
+
+.wwa-card {
+    background: #fff;
+    border: 4px solid #f4aa00;
+    border-radius: 26px;
+    padding: 26px 24px 24px;
+    text-align: center;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, .08);
+}
+
+.wwa-card h3 {
+    font-family: 'Jomhuria', cursive;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: .7;
+    color: #111;
+}
+
+.wwa-card img {
+    width: 100%;
+    max-width: 250px;
+    margin: 12px auto;
+    display: block;
+}
+
+.wwa-card p {
+    font-family: 'Kite One', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #111;
+    /* font-style: italic; */
+    max-width: 520px;
+    margin: auto;
+}
+
+/* ================= BOTTOM ================= */
+
+.wwa-bottom-area {
+    position: relative;
+    margin-top: 40px;
+}
+
+.wwa-wave {
+    width: 100%;
+    display: block;
+    margin-top: -50px;
+}
+
+.wwa-bottom-area h4 {
+    position: absolute;
+    bottom: 58px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    font-family: 'Jomhuria', cursive;
+    font-size: 72px;
+    line-height: .8;
+    color: #111;
+    font-weight: 500;
+   
+}
+
+/* ================= LAPTOP ================= */
+
+@media(max-width:1200px) {
+
+    .wwa-heading {
+        font-size: 82px;
+    }
+
+    .wwa-text {
+        font-size: 18px;
+        max-width: 760px;
+    }
+
+    .wwa-card h3 {
+        font-size: 62px;
+    }
+
+    .wwa-card p {
+        font-size: 17px;
+    }
+
+    .wwa-bottom-area h4 {
+        font-size: 58px;
+    }
+}
+
+/* ================= TABLET ================= */
+
+@media(max-width:992px) {
+
+    .wwa-grid {
+        gap: 18px;
+    }
+
+    .wwa-card {
+        padding: 20px 16px;
+    }
+
+    .wwa-card img {
+        max-width: 210px;
+    }
+
+    .wwa-bottom-area h4 {
+        font-size: 48px;
+        bottom: 12px;
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px) {
+
+    .wwa-container {
+        padding: 22px 12px 0;
+    }
+
+    .wwa-heading {
+        font-size: 62px;
+        padding: 6px 18px 0;
+    }
+
+    .wwa-text {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-top: 14px;
+        max-width: 330px;
+    }
+
+    .wwa-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-top: 24px;
+    }
+
+    .wwa-card {
+        border-width: 4px;
+        border-radius: 24px;
+        padding: 18px 14px;
+    }
+
+    .wwa-card h3 {
+        font-size: 48px;
+    }
+
+    .wwa-card img {
+        max-width: 190px;
+        margin: 8px auto;
+    }
+
+    .wwa-card p {
+        font-size: 13px;
+        line-height: 1.55;
+    }
+
+    .wwa-bottom-area {
+        margin-top: 24px;
+    }
+
+    .wwa-bottom-area h4 {
+        font-size: 34px;
+        bottom: 8px;
+        padding: 0 10px;
+    }
+}
+
+/* ================= SMALL PHONE ================= */
+
+@media(max-width:480px) {
+
+    .wwa-wave{
+        margin-top: 20px;
+    }
+
+    .wwa-heading {
+        font-size: 52px;
+    }
+
+    .wwa-text {
+        font-size: 12px;
+        max-width: 290px;
+    }
+
+    .wwa-card h3 {
+        font-size: 42px;
+    }
+
+    .wwa-card img {
+        max-width: 160px;
+    }
+
+    .wwa-card p {
+        font-size: 12px;
+    }
+
+    .wwa-bottom-area h4 {
+        font-size: 26px;
+        bottom: 15px;
+    }
+}

@@ -269,6 +269,7 @@
     font-family: "Poppins", sans-serif;
     overflow: hidden;
     background: #ffffff !important;
+    
 }
 
 
@@ -392,6 +393,7 @@
     font-size: 15px;
     cursor: pointer;
     transition: all 0.3s ease;
+     color: #000000;
 }
 
 .footer__socials svg:hover {
