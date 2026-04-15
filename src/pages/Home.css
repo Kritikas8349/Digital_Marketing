@@ -161,13 +161,13 @@ body {
 @media(max-width:480px) {
 
     .home-left h1 {
-        font-size: 78px;
+        font-size: 74px;
         /* margin-top: 30px; */
         line-height: 0.6;
     }
 
     .bg-shape {
-        height: 97%;
+        height: 85%;
     }
 
     .home-btn {
