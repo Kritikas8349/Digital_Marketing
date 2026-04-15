@@ -16,6 +16,7 @@
     position: relative;
     overflow: hidden;
     padding: 45px 15px 0;
+    max-height: 88vh;
 }
 
 .ser-container {
@@ -245,7 +246,7 @@
     font-weight: 800;
     color: #fff;
     padding: 0 18px;
-    -webkit-text-stroke: 12px #f4aa00;
+    -webkit-text-stroke: 16px #f4aa00;
     paint-order: stroke fill;
 }
 
@@ -351,7 +352,7 @@
 
     .wwdb-heading {
         font-size: 38px;
-        -webkit-text-stroke: 9px #f4aa00;
+        -webkit-text-stroke: 11px #f4aa00;
     }
 
     .wwdb-subtitle {
@@ -379,8 +380,8 @@
     }
 
     .wwdb-heading {
-        font-size: 24px;
-        -webkit-text-stroke: 6px #f4aa00;
+        font-size: 34px;
+        -webkit-text-stroke: 8px #f4aa00;
         margin: 10px auto 12px;
         padding: 0 10px;
     }
@@ -421,36 +422,33 @@
         line-height: 1.35;
     }
 
-    .wwdb-round-bl {
-        /* border-top-right-radius:34px; */
+
+    /* ================= Small Phones ================= */
+    @media(max-width:480px) {
+
+
+        .wwdb-grid {
+            max-width: 290px;
+        }
+
+        .wwdb-heading {
+            font-size: 36px;
+            -webkit-text-stroke: 8px #f4aa00;
+        }
+
+        .wwdb-card h2 {
+            font-size: 36px;
+            letter-spacing: 0.5px;
+        }
+
+        .wwdb-card p,
+        .wwdb-card li {
+            font-size: 12px;
+        }
+
+        .wwdb-card p {
+            margin-bottom: 15px;
+        }
+
     }
-}
-
-/* ================= Small Phones ================= */
-@media(max-width:480px) {
-
-
-    .wwdb-grid {
-        max-width: 290px;
-    }
-
-    .wwdb-heading {
-        font-size: 36px;
-        -webkit-text-stroke: 5px #f4aa00;
-    }
-
-    .wwdb-card h2 {
-        font-size: 36px;
-        letter-spacing: 0.5px;
-    }
-
-    .wwdb-card p,
-    .wwdb-card li {
-        font-size: 12px;
-    }
-
-    .wwdb-card p {
-        margin-bottom: 15px;
-    }
-
 }
