@@ -248,8 +248,9 @@
     }
 
     .top-img {
-        margin-top: -28px;
-        max-width: 150px;
+        margin-top: -26px;
+        margin-right: -20px ;
+        max-width: 170px;
     }
 
     .top-btn {
