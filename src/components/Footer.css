@@ -117,37 +117,53 @@
     color: #fff;
 }
 
-/* Tablet */
+/* Tablet (iPad ~820px) */
 @media(max-width:1024px) {
 
     .top-container {
         grid-template-columns: 1fr;
         gap: 30px;
+        text-align: center;
     }
 
     .top-left {
         min-height: auto;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-heading {
+        font-size: 82px;
+        line-height: 0.8;
+        margin-bottom: 10px;
+        max-width: 420px;
     }
 
     .top-subtext {
-        margin: auto;
+        margin: 0 auto;
+        font-size: 22px;
+        max-width: 400px;
     }
 
     .top-img-box {
         position: static;
         margin-top: 20px;
+        display: flex;
+        justify-content: center;
     }
 
     .top-img {
-        max-width: 300px;
+        max-width: 280px;
     }
 
-    .top-heading {
-        font-size: 56px;
+    /* 🔥 IMPORTANT: form ko full width hi rehne do */
+    .top-form {
+        width: 100%;
+        margin-top: 10px;
     }
 }
-
 /* Mobile */
 @media(max-width:768px) {
 
@@ -160,19 +176,22 @@
     }
 
     .top-left {
-        text-align: left;
+        text-align: center;
     }
 
     .top-heading {
         font-size: 42px;
         line-height: 0.95;
-        margin-bottom: 8px;
+        /* margin-bottom: 8px; */
+        text-align: center;  /* 🔥 ensure center */
+        margin: 0 auto 8px;
     }
 
     .top-subtext {
         font-size: 14px;
         max-width: 210px;
-        margin: 0;
+        text-align: center;  /* optional but better UI */
+        margin: 0 auto;
     }
 
     .top-img-box {

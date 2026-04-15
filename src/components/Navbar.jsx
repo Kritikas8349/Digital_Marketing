@@ -1,10 +1,42 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import Logo from "../assets/Logo_o.png";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  useEffect(() => {
+    const handleClick = (e) => {
+      const menu = document.querySelector(".mobile-menu");
+      const icon = document.querySelector(".menu-icon");
+  
+      if (
+        menu &&
+        !menu.contains(e.target) &&
+        !icon.contains(e.target)
+      ) {
+        setMenuOpen(false);
+      }
+    };
+  
+    document.addEventListener("click", handleClick);
+  
+    return () => {
+      document.removeEventListener("click", handleClick);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setMenuOpen(false);
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+  
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <header className="navbar-wrapper">
