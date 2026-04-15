@@ -44,35 +44,27 @@ const Navbar = () => {
 
         {/* Logo */}
         <div className="navbar-logo">
-          <img src={Logo} alt="Soul & Solution" className="logo-img" />
+          <Link to="/">
+            <img
+              src={Logo}
+              alt="Soul & Solution"
+              className="logo-img"
+            />
+          </Link>
         </div>
 
         {/* Desktop Menu */}
         <ul className="nav-links">
-          <li>
-            <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/services" className={({ isActive }) => isActive ? "active" : ""}>
-              Services
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""}>
-              About Us
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>
-              Contact Us
-            </NavLink>
-          </li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/services">Services</Link></li>
+          <li><Link to="/about">About Us</Link></li>
+          <li><Link to="/contact">Contact Us</Link></li>
         </ul>
 
         {/* Button */}
-        <button className="contact-btn">Get in touch</button>
+        <Link to="/contact">
+          <button className="contact-btn">Get in touch</button>
+        </Link>
 
         {/* Hamburger */}
         <div
@@ -88,16 +80,20 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="mobile-menu">
-          <NavLink to="/" onClick={() => setMenuOpen(false)}>Home</NavLink>
-          <NavLink to="/services" onClick={() => setMenuOpen(false)}>Services</NavLink>
-          <NavLink to="/about" onClick={() => setMenuOpen(false)}>About Us</NavLink>
-          <NavLink to="/contact" onClick={() => setMenuOpen(false)}>Contact Us</NavLink>
+          <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+          <Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
+          <Link to="/about" onClick={() => setMenuOpen(false)}>About Us</Link>
+          <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact Us</Link>
 
-          <button className="contact-btn mobile-btn">
-            Get in touch
-          </button>
+          <Link to="/contact" onClick={() => setMenuOpen(false)}>
+            <button className="contact-btn mobile-btn">
+              Get in touch
+            </button>
+          </Link>
         </div>
       )}
+
+      <div className="wave-shape"></div>
     </header>
   );
 };
