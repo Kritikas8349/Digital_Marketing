@@ -1,5 +1,6 @@
 // Navbar.jsx
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Logo from "../assets/Logo_o.png";
 
@@ -9,25 +10,30 @@ const Navbar = () => {
   return (
     <header className="navbar-wrapper">
       <nav className="navbar">
+
         {/* Logo */}
         <div className="navbar-logo">
-          <img
-            src={Logo}
-            alt="Soul & Solution"
-            className="logo-img"
-          />
+          <Link to="/">
+            <img
+              src={Logo}
+              alt="Soul & Solution"
+              className="logo-img"
+            />
+          </Link>
         </div>
 
         {/* Desktop Menu */}
         <ul className="nav-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/">Services</a></li>
-          <li><a href="/">About Us</a></li>
-          <li><a href="/">Contact Us</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/services">Services</Link></li>
+          <li><Link to="/about">About Us</Link></li>
+          <li><Link to="/contact">Contact Us</Link></li>
         </ul>
 
         {/* Button */}
-        <button className="contact-btn">Get in touch</button>
+        <Link to="/contact">
+          <button className="contact-btn">Get in touch</button>
+        </Link>
 
         {/* Mobile Icon */}
         <div
@@ -41,17 +47,19 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="mobile-menu">
-          <a href="/">Home</a>
-          <a href="/">Services</a>
-          <a href="/">About Us</a>
-          <a href="/">Contact Us</a>
-          <button className="contact-btn mobile-btn">
-            Get in touch
-          </button>
+          <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+          <Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
+          <Link to="/about" onClick={() => setMenuOpen(false)}>About Us</Link>
+          <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact Us</Link>
+
+          <Link to="/contact" onClick={() => setMenuOpen(false)}>
+            <button className="contact-btn mobile-btn">
+              Get in touch
+            </button>
+          </Link>
         </div>
       )}
 
-      {/* Bottom Wave */}
       <div className="wave-shape"></div>
     </header>
   );

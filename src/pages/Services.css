@@ -1,0 +1,444 @@
+/* Services.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ser-section {
+    width: 100%;
+    background: #FDECD8;
+    position: relative;
+    overflow: hidden;
+    padding: 45px 15px 0;
+}
+
+.ser-container {
+    max-width: 1400px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Heading */
+.ser-heading {
+    font-family: 'Jomhuria', cursive;
+    font-size: 140px;
+    line-height: 0.6;
+    color: #111;
+    font-weight: 500;
+    width: 100%;
+    margin-top: -20px;
+}
+
+.ser-heading span {
+    display: block;
+    color: #f4aa00;
+}
+
+/* Button */
+.ser-btn {
+    margin-top: 28px;
+    width: 200px;
+    height: auto;
+    border-radius: 50px;
+    border: 2px solid #d89c00;
+    background: transparent;
+    font-size: 45px;
+    font-family: 'Jomhuria', cursive;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+    padding: 4px 4px 0;
+}
+
+.ser-btn:hover {
+    background: #f4aa00;
+    color: #fff;
+}
+
+/* Center Image */
+.ser-img-box {
+    display: flex;
+    justify-content: center;
+}
+
+.ser-img {
+    width: 100%;
+    max-width: 800px;
+    object-fit: contain;
+    margin-top: -20px;
+
+}
+
+/* ================= Left / Right Shape Control ================= */
+
+.ser-left-shape {
+    position: absolute;
+    left: 0;
+    bottom: 200px;
+    /* increase = up | decrease = down */
+    z-index: 1;
+}
+
+.ser-right-shape {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    /* increase = up | decrease = down */
+    z-index: 1;
+}
+
+.ser-left-shape img,
+.ser-right-shape img {
+    width: 200px;
+    object-fit: contain;
+}
+
+/* Tablet */
+@media(max-width:1024px) {
+
+    .ser-heading {
+        font-size: 56px;
+        max-width: 900px;
+    }
+
+    .ser-btn {
+        width: 240px;
+        height: 64px;
+        font-size: 28px;
+    }
+
+    .ser-img {
+        max-width: 560px;
+    }
+
+    .ser-left-shape {
+        bottom: 90px;
+    }
+
+    .ser-right-shape {
+        bottom: 90px;
+    }
+
+    .ser-left-shape img,
+    .ser-right-shape img {
+        width: 130px;
+    }
+}
+
+/* Mobile */
+@media(max-width:768px) {
+
+    .ser-section {
+        padding: 24px 10px 0;
+    }
+
+    .ser-heading {
+        font-size: 28px;
+        line-height: 1.08;
+        max-width: 320px;
+        margin: 0 auto 14px;
+    }
+
+    .ser-btn {
+        width: 200px;
+        height: 54px;
+        font-size: 22px;
+        margin-bottom: 14px;
+    }
+
+    .ser-img {
+        max-width: 280px;
+    }
+
+    .ser-left-shape {
+        bottom: 120px;
+    }
+
+    .ser-right-shape {
+        bottom: 120px;
+    }
+
+    .ser-left-shape img,
+    .ser-right-shape img {
+        width: 70px;
+    }
+}
+
+/* Small phones */
+@media(max-width:480px) {
+
+    .ser-section {
+        height: 600px;
+    }
+
+    .ser-heading {
+        font-size: 74px;
+        line-height: 0.6;
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+
+    .ser-btn {
+        width: 170px;
+        height: 42px;
+        font-size: 36px;
+        margin-bottom: -18px;
+    }
+
+    .ser-img {
+        max-width: 380px;
+        margin-top: 90px;
+    }
+
+    .ser-left-shape {
+        bottom: 320px;
+        /* mobile move */
+    }
+
+    .ser-right-shape {
+        bottom: 220px;
+        /* mobile move */
+    }
+
+    .ser-left-shape img,
+    .ser-right-shape img {
+        width: 58px;
+    }
+}
+
+/*----------------------------------------------------- What we do best-------------------------------------- */
+.wwdb-section{
+    width:100%;
+    background:#ffffff;
+    padding:18px 18px 40px;
+}
+
+.wwdb-container{
+    max-width:1400px;
+    margin:auto;
+}
+
+/* Heading */
+.wwdb-heading{
+    display:block;
+    width:fit-content;
+    margin:20px auto 40px;
+    font-family:'Anton', sans-serif;
+    font-size:52px;
+    font-weight:800;
+    color:#fff;
+    padding:0 18px;
+    -webkit-text-stroke:12px #f4aa00;
+    paint-order:stroke fill;
+}
+
+/* Subtitle */
+.wwdb-subtitle{
+    max-width:520px;
+    margin:-30px auto 25px;
+    text-align:center;
+    font-family:'Kite One', sans-serif;
+    font-size:18px;
+    line-height:1.35;
+    color:#222;
+}
+
+/* ================= GRID ================= */
+.wwdb-grid{
+    display:grid;
+    grid-template-columns:repeat(2, max-content);
+    justify-content:center;
+    gap:30px;
+}
+
+/* ================= CARD ================= */
+.wwdb-card{
+    background:#f7f1e7;
+    border:2px solid #f4aa00;
+    padding:18px 18px 14px;
+    border-radius:10px;
+
+    width:600px;
+    min-height:300px;
+}
+
+/* Text */
+.wwdb-card h2{
+    font-family: Jomhuria, cursive;
+    font-size:64px;
+    line-height:1.05;
+    color:#111;
+    font-weight: 500;
+    margin-bottom:10px;
+    letter-spacing: 1px ;
+}
+
+.wwdb-card p{
+    font-family:'Kite One', sans-serif;
+    font-size:18px;
+    line-height:1.45;
+    color:#333;
+    margin-bottom:22px;
+}
+
+.wwdb-card ul{
+    padding-left:18px;
+}
+
+.wwdb-card li{
+    font-family:'Kite One', sans-serif;
+    font-size:17px;
+    line-height:1.45;
+    color:#111;
+}
+
+/* Corners */
+.wwdb-round-br{
+    border-bottom-right-radius:60px;
+}
+
+.wwdb-round-bl{
+    border-bottom-left-radius:60px;
+}
+
+.wwdb-round-tr{
+    border-top-right-radius:60px;
+}
+
+.wwdb-round-tl{
+    border-top-left-radius:60px;
+}
+
+/* ================= Laptop ================= */
+@media(max-width:1200px){
+
+    .wwdb-card{
+        width:470px;
+    }
+
+    .wwdb-card h2{
+        font-size:30px;
+    }
+
+    .wwdb-card p{
+        font-size:16px;
+    }
+
+    .wwdb-card li{
+        font-size:15px;
+    }
+}
+
+/* ================= Tablet ================= */
+@media(max-width:1024px){
+
+    .wwdb-heading{
+        font-size:38px;
+        -webkit-text-stroke:9px #f4aa00;
+    }
+
+    .wwdb-subtitle{
+        font-size:15px;
+    }
+
+    .wwdb-grid{
+        grid-template-columns:1fr;
+        justify-items:center;
+        gap:14px;
+    }
+
+    .wwdb-card{
+        width:92%;
+        max-width:650px;
+        min-height:auto;
+    }
+}
+
+/* ================= Mobile ================= */
+@media(max-width:768px){
+
+    .wwdb-section{
+        padding:12px 10px 28px;
+    }
+
+    .wwdb-heading{
+        font-size:24px;
+        -webkit-text-stroke:6px #f4aa00;
+        margin:10px auto 12px;
+        padding:0 10px;
+    }
+
+    .wwdb-subtitle{
+        font-size:13px;
+        line-height:1.35;
+        max-width:330px;
+        margin:0 auto 14px;
+    }
+
+    .wwdb-grid{
+        grid-template-columns:1fr;
+        gap:10px;
+        max-width:320px;
+        margin:auto;
+    }
+
+    .wwdb-card{
+        width:115%;
+        min-height:auto;
+        padding:12px 12px 10px;
+        border-radius: 16px;
+    }
+
+    .wwdb-card h2{
+        font-size:20px;
+        margin-bottom:6px;
+    }
+
+    .wwdb-card p{
+        font-size:10px;
+        margin-bottom:8px;
+    }
+
+    .wwdb-card li{
+        font-size:10px;
+        line-height:1.35;
+    }
+
+    .wwdb-round-bl{
+        /* border-top-right-radius:34px; */
+    }
+}
+
+/* ================= Small Phones ================= */
+@media(max-width:480px){
+    
+
+    .wwdb-grid{
+        max-width:290px;
+    }
+
+    .wwdb-heading{
+        font-size:36px;
+        -webkit-text-stroke:5px #f4aa00;
+    }
+
+    .wwdb-card h2{
+        font-size: 36px;
+        letter-spacing: 0.5px;
+    }
+
+    .wwdb-card p,
+    .wwdb-card li{
+        font-size:12px;
+    }
+    .wwdb-card p{
+        margin-bottom: 15px;
+    }
+
+}
