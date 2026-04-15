@@ -213,12 +213,12 @@
 @media(max-width:480px) {
 
     .top-heading {
-        line-height: 0.6;
+        line-height: 0.53;
         font-size: 54px;
     }
 
     .top-img {
-        margin-top: -26px;
+        margin-top: -33px;
         max-width: 150px;
     }
 

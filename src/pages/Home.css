@@ -329,11 +329,13 @@ body {
   
     .text h3 {
       font-size: 46px;
-      margin-bottom: -5px;
+      /* margin-bottom: -5px; */
+      line-height: .6;
     }
   
     .text p {
-      font-size: 18px;
+      font-size: 16px;
+      margin-top: 15px;
     }
   }
   
@@ -839,11 +841,14 @@ body {
     }
 
     .w-card h2 {
-        font-size: 36px;
+        font-size: 40px;
+        line-height: 0.6;
+
     }
 
     .w-card p {
         font-size: 14px;
+        margin-top: 10px;
     }
 }
 
@@ -997,7 +1002,7 @@ body {
     }
 
     .faq-question span:first-child {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .faq-answer p {
@@ -1099,7 +1104,7 @@ body {
 
 .t-content h2 {
     font-family: 'Jomhuria', cursive;
-    font-size: 38px;
+    font-size: 58px;
     font-weight: 500;
     /* line-height: 1.05; */
     color: #111;
@@ -1207,11 +1212,11 @@ body {
 @media(max-width:480px) {
 
     .t-content h2 {
-        font-size: 38px;
+        font-size: 32px;
     }
 
     .t-content p {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 16px;
     }
 }
