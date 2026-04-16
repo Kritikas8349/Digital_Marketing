@@ -9,7 +9,7 @@ import aboutBottomWave from "../assets/about-bottom-wave.png";
 
 import visionImg from "../assets/vision-team.png";
 import missionImg from "../assets/mission-growth.png";
-import bottomWave from "../assets/who-wave-bottom.png";
+import bottomWave from "../assets/wave_about.png";
 
 const About = () => {
     return (
@@ -28,7 +28,7 @@ const About = () => {
                 <div className="about-container">
                     {/* LEFT CONTENT */}
                     <div className="about-content">
-                        <h2>About Us</h2>
+                        <h2>Inside <span>The Soul Solution</span></h2>
 
                         <p>
                             At The Soul Solution, we don’t just market brands we give them a
@@ -124,7 +124,7 @@ const About = () => {
                 <div className="wwa-bottom-area">
                     <img src={bottomWave} alt="wave design" className="wwa-wave" />
 
-                    <h4>Let's build something meaningful together</h4>
+                    {/* <h4>Let's build something meaningful together</h4> */}
                 </div>
 
             </section>

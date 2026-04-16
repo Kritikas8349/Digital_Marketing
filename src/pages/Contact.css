@@ -1,0 +1,208 @@
+.contact {
+    position: relative;
+    background: #FDECD8;
+    overflow: hidden;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  /* TEXT */
+  .contact__content {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .contact__content h1 {
+    font-size: 120px;
+    font-weight: 500;
+    color: #000;
+    font-family: 'Jomhuria', cursive;
+  }
+
+  .contact__content h1 span{
+    color: #f4aa00;
+  }
+  
+  .subtitle {
+    font-family: 'Kite One', cursive;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #111;
+  }
+
+  /* BUTTON */
+  .contact__btn {
+    margin-top: 25px;
+    padding: 4px 20px 0;
+    border-radius: 50px;
+    border: 2px solid #f4aa00;
+    background: transparent;
+    font-size: 45px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: 'Jomhuria', cursive;
+  }
+  
+  .contact__btn:hover {
+    background: #f4a100;
+    color: #fff;
+  }
+  
+  /* IMAGE (ABOVE WAVE) */
+  .contact__image {
+    position: relative;
+    z-index: 2;
+    margin-top: 40px;
+  }
+  
+  .contact__image img {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  /* WAVE (BOTTOM LAYER) */
+  .contact__wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .contact__wave img {
+    width: 100%;
+    display: block;
+  }
+  
+  /* ================= RESPONSIVE ================= */
+  
+  /* Tablet */
+  @media (max-width: 1024px) {
+    .contact__content h1 {
+      font-size: 42px;
+    }
+  
+    .contact__image img {
+      max-width: 500px;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 768px) {
+    .contact {
+      padding: 20px 15px 0;
+    }
+  
+    .contact__content h1 {
+      font-size: 88px;
+    }
+  
+    .subtitle {
+      font-size: 16px;
+    }
+
+    .contact__btn {
+      padding: 8px 20px 4px;
+      font-size: 34px;
+    }
+  
+    .contact__image img {
+      max-width: 100%;
+    }
+  }
+
+
+
+.why {
+  background: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* HEADING (Stroke + Fill Effect) */
+.why__heading {
+    width: max-content;
+    margin: 0 auto 40px;
+    font-family: 'Anton', sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1;
+    color: #fff;
+    /* background: #f4aa00; */
+    padding: 5px 18px;
+    -webkit-text-stroke: 14px #f4aa00;
+    paint-order: stroke fill;
+}
+
+/* CARDS CONTAINER */
+.why__container {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* CARD */
+.why__card {
+  background: #FDECD8;
+  padding: 18px 20px;
+  border-radius: 12px;
+  border: 1.5px solid #f4a100;
+
+  font-size: 22px;
+  font-weight: 700;
+  color: #000;
+
+  transition: all 0.3s ease;
+}
+
+/* HOVER (premium feel) */
+.why__card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .why__heading {
+    font-size: 60px;
+  }
+
+  .why__card {
+    font-size: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .why {
+    padding: 60px 15px;
+  }
+
+  .why__heading {
+    font-size: 44px;
+    -webkit-text-stroke: 12px #f4aa00;
+  }
+
+  .why__card {
+    font-size: 18px;
+    padding: 14px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .why__heading {
+    font-size: 36px;
+  }
+
+  .why__card {
+    font-size: 18px;
+  }
+}

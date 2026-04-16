@@ -30,12 +30,12 @@
 /* Heading */
 .ser-heading {
     font-family: 'Jomhuria', cursive;
-    font-size: 140px;
+    font-size: 120px;
     line-height: 0.6;
     color: #111;
     font-weight: 500;
     width: 100%;
-    margin-top: -20px;
+    /* margin-top: -20px; */
 }
 
 .ser-heading span {
@@ -45,7 +45,7 @@
 
 /* Button */
 .ser-btn {
-    margin-top: 28px;
+    margin-top: 20px;
     width: 200px;
     height: auto;
     border-radius: 50px;
