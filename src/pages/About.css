@@ -230,6 +230,9 @@ body {
     .about-top-blob {
         width: 55px;
     }
+    .about-content{
+        margin-right: 20px;
+    }
 
     .about-content h2 {
         line-height: 0.6;
