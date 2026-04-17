@@ -251,14 +251,12 @@ body {
     display: block;
     width: fit-content;
     margin: 0 auto 40px;
-
+    text-align: center;
     font-family: 'Anton', sans-serif;
     font-size: 52px;
-    font-weight: 800;
-
+    font-weight: 800;   
     color: #fff;
     padding: 0 18px;
-
     -webkit-text-stroke: 18px #f4aa00;
     paint-order: stroke fill;
 }

@@ -124,7 +124,8 @@ const Home = () => {
 
             <section className="about">
 
-                <h2 className="about-title">ABOUT THE SOUL SOLUTION</h2>
+                <h2 className="about-title">ABOUT <br />
+                    THE SOUL SOLUTION</h2>
 
                 {/* Row 1 */}
                 <div className="about-row">
