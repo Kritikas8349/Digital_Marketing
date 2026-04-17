@@ -710,7 +710,7 @@ body {
     /* Typography adjust */
     .service-card h2 {
         font-size: 52px;
-        line-height: 0.8;
+        line-height: 0.6;
         margin-bottom: 10px;
     }
 
@@ -724,7 +724,7 @@ body {
     .left-img img,
     .center-img img,
     .right-img img {
-        max-width: 180px;
+        max-width: 200px;
     }
 }
 
