@@ -60,7 +60,7 @@ body {
 .about-content h2 {
     font-family: 'Jomhuria', cursive;
     font-size: 115px;
-    line-height: 0.7;
+    line-height: 0.55;
     color: #000;
     font-weight: 500;
     margin-bottom: 18px;
@@ -231,6 +231,7 @@ body {
     }
 
     .about-content h2 {
+        line-height: 0.6;
         font-size: 82px;
         margin-top: 10px;
     }
