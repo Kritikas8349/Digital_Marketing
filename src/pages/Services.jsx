@@ -42,7 +42,8 @@ const Services = () => {
                 </div>
             </section>
 
-            {/*------------------------------------ What we do best ----------------------*/}
+            {/*------------------------------------ What we do best --------------------*/}
+
             <section className="wwdb-section">
                 <div className="wwdb-container">
 
