@@ -1,7 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import contact_wave from "../assets/about-bottom-wave.png";
-import contact from "../assets/contact.png";
+import contact from "../assets/contact_image.png";
 
 const Contact = () => {
     return (

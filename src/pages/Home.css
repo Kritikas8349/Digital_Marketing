@@ -254,7 +254,7 @@ body {
     text-align: center;
     font-family: 'Anton', sans-serif;
     font-size: 52px;
-    font-weight: 800;   
+    font-weight: 800;
     color: #fff;
     padding: 0 18px;
     -webkit-text-stroke: 18px #f4aa00;
@@ -365,6 +365,7 @@ body {
     .about-row .text.left {
         text-align: center;
         margin-left: 0;
+        margin-bottom: 40px;
     }
 
     .card {
@@ -662,76 +663,67 @@ body {
 }
 
 /* ================= MOBILE SLIDER ================= */
+/* ================= MOBILE (NO SLIDER - STACKED) ================= */
 @media(max-width:768px) {
 
     .services-section {
         padding: 25px 12px 45px;
-        overflow: hidden;
     }
 
     .services-heading {
-        font-size: 48px;
+        font-size: 42px;
         margin-bottom: 22px;
     }
 
-    /* Slider layout */
+    /* Remove slider → back to column layout */
     .services-grid {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
+        gap: 22px;
     }
 
-    /* SHOW arrows only on mobile */
+    /* ❌ Remove arrows completely */
     .nav-btn {
-        display: block;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: #f4aa00;
-        border: none;
-        font-size: 28px;
-        padding: 6px 12px;
-        border-radius: 50%;
-        cursor: pointer;
-        z-index: 10;
+        display: none !important;
     }
 
-    .nav-btn.left {
-        left: 0;
-    }
-
-    .nav-btn.right {
-        right: 0;
-    }
-
-    /* Hide side cards */
+    /* Show ALL cards */
+    .service-card,
+    .service-card.active,
     .service-card.side {
-        display: none;
-    }
-
-    /* Active card */
-    .service-card.active {
         display: block;
         width: 100%;
-        max-width: 320px;
-        min-height: 450px;
+        max-width: 100%;
+        min-height: 420px;
         margin: auto;
-        transform: scale(1);
+        transform: none;
         opacity: 1;
     }
 
-    .center-card h2 {
-        font-size: 58px;
-        line-height: 0.7;
-        margin-bottom: 20px;
+    /* Make all cards same style */
+    .small-card,
+    .center-card {
+        padding: 18px 16px 0;
+        min-height: 440px;
     }
 
-    .center-card p {
-        font-size: 16px;
+    /* Typography adjust */
+    .service-card h2 {
+        font-size: 52px;
+        line-height: 0.8;
+        margin-bottom: 10px;
     }
 
-    .center-img img {
-        max-width: 200px;
+    .service-card p {
+        font-size: 18px;
+        margin-top: -10px;
+    }
+
+    /* Images smaller for mobile */
+    .left-img img,
+    .center-img img,
+    .right-img img {
+        max-width: 230px;
     }
 }
 
@@ -873,7 +865,7 @@ body {
 
 /* Mobile */
 @media(max-width:768px) {
-    
+
     .w-section {
         padding: 18px 10px 45px;
     }
@@ -1154,14 +1146,17 @@ body {
     width: 78px;
     height: 78px;
     min-width: 78px;
-    /* border: 5px solid #f4aa00; */
+    aspect-ratio: 1/1;
+    /* ✅ ensures perfect circle */
     border-radius: 50%;
     background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #777;
-    margin: 0px 20px 30px;
+    overflow: hidden;
+    /* ✅ VERY IMPORTANT */
+    border: 5px solid #f4aa00;
+    /* move border here */
 }
 
 /* Left overlap */
@@ -1219,12 +1214,13 @@ body {
 }
 
 .t-profile img {
-    width: 140%;
-    height: 140%;
-    border-radius: 50%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    /* ✅ keeps image proportional */
+    border-radius: 50%;
     display: block;
-    border: 6px solid #f4aa00;
+    /* border: 6px solid #f4aa00; */
 }
 
 /* Tablet */
@@ -1270,23 +1266,23 @@ body {
     .t-card {
         min-height: 86px;
         border-radius: 8px;
-        padding: 12px 14px;
+        padding: 12px 18px;
     }
 
     .t-profile {
-        width: 46px;
-        height: 46px;
-        min-width: 56px;
+        width: 70px;
+        height: 70px;
+        min-width: 50px;
         /* border: 3px solid #f4aa00; */
         margin-top: -2px;
     }
 
     .left-t .t-profile {
-        left: -3px;
+        left: 4px;
     }
 
     .right-t .t-profile {
-        right: -3px;
+        right: 4px;
     }
 
     .left-t .t-content {

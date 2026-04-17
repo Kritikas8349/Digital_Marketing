@@ -16,9 +16,9 @@ import RightGirl from "../assets/service-right.png";
 
 import BulbImg from "../assets/bulb.png";
 
-import testimonial1 from "../assets/testimonial1.png";
-import testimonial2 from "../assets/testimonial2.png";
-import testimonial3 from "../assets/testimonial3.png";
+import testimonial1 from "../assets/testimonial1.jpg";
+import testimonial2 from "../assets/testimonial2.jpg";
+import testimonial3 from "../assets/testimonial3.jpg";
 
 
 
