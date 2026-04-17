@@ -1144,8 +1144,8 @@ body {
 
 /* Profile Circle */
 .t-profile {
-    width: 78px;
-    height: 78px;
+    width: 100px;
+    height: 100px;
     min-width: 78px;
     aspect-ratio: 1/1;
     /* ✅ ensures perfect circle */
@@ -1163,7 +1163,7 @@ body {
 /* Left overlap */
 .left-t .t-profile {
     position: absolute;
-    left: 0px;
+    left: 8px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -1171,7 +1171,7 @@ body {
 /* Right overlap */
 .right-t .t-profile {
     position: absolute;
-    right: 0px;
+    right: 8px;
     top: 50%;
     transform: translateY(-50%);
 }
