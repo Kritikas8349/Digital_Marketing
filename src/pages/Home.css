@@ -623,7 +623,7 @@ body {
 }
 
 .left-img img {
-    max-width: 240px;
+    max-width: 380px;
 }
 
 .center-img img {
@@ -681,6 +681,9 @@ body {
         flex-direction: column;
         gap: 22px;
     }
+    .left-img img {
+    max-width: 330px !important;
+}
 
     /* ❌ Remove arrows completely */
     .nav-btn {
