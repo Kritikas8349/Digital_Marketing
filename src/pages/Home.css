@@ -343,8 +343,8 @@ body {
     }
 
     .about-title {
-        font-size: 37px;
-        -webkit-text-stroke: 9px #f4aa00;
+        font-size: 36px;
+        -webkit-text-stroke: 12px #f4aa00;
         text-align: center;
         line-height: 1.2;
     }
@@ -889,7 +889,7 @@ body {
     }
 
     .w-heading {
-        font-size: 30px;
+        font-size: 36px;
         padding: 4px 10px;
         margin-bottom: 10px;
     }
@@ -1258,7 +1258,7 @@ body {
 
     .t-heading {
         margin-top: 30px;
-        font-size: 30px;
+        font-size: 36px;
         -webkit-text-stroke: 9px #f4aa00;
 
     }
@@ -1310,6 +1310,13 @@ body {
 
 /* Small phones */
 @media(max-width:480px) {
+
+    .t-heading {
+        margin-top: 30px;
+        font-size: 36px;
+        -webkit-text-stroke: 12px #f4aa00;
+
+    }
 
     .t-content h2 {
         font-size: 32px;
