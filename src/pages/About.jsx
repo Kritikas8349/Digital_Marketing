@@ -28,10 +28,10 @@ const About = () => {
                 <div className="about-container">
                     {/* LEFT CONTENT */}
                     <div className="about-content">
-                        <h2>Inside <br /> <span>The Soul Solution</span></h2>
+                        <h2>Inside <br /> <span>Wings Digital Media</span></h2>
 
                         <p>
-                            At The Soul Solution, we don’t just market brands we give them a
+                            At Wings digital media, we don’t just market brands we give them a
                             voice, a personality, and a purpose.
                         </p>
 

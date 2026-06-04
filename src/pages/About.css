@@ -64,6 +64,7 @@ body {
     color: #000;
     font-weight: 500;
     margin-bottom: 18px;
+    width: 600px;
 }
 
 .about-content h2 span{
@@ -71,7 +72,7 @@ body {
 }
 
 .about-content p {
-    font-family: 'Kite One', cursive;
+    font-family: 'Gabriela', serif;
     font-size: 20px;
     line-height: 1.42;
     color: #111;
@@ -238,11 +239,13 @@ body {
         line-height: 0.6;
         font-size: 75px;
         margin-top: 40px;
+        margin-left: -85px;
+        
     }
 
     .about-content p {
         font-size: 16px;
-        max-width: 310px;
+        max-width: 340px;
     }
 
     .about-right-image {
@@ -294,7 +297,7 @@ body {
 .wwa-text {
     max-width: 920px;
     margin: 22px auto 40px;
-    font-family: 'Kite One', cursive;
+   font-family: 'Gabriela', serif;
     font-size: 18px;
     line-height: 1.;
     color: #111;
@@ -323,9 +326,9 @@ body {
 }
 
 .wwa-card h3 {
-    font-family: 'Jomhuria', cursive;
-    font-weight: 500;
-    font-size: 70px;
+    font-family: 'Gabriela', serif;
+    font-weight: 900;
+    font-size: 32px;
     line-height: .7;
     color: #111;
 }
@@ -338,7 +341,7 @@ body {
 }
 
 .wwa-card p {
-    font-family: 'Kite One', sans-serif;
+    font-family: 'Gabriela', serif;
     font-size: 18px;
     line-height: 1.6;
     color: #111;
@@ -493,12 +496,12 @@ body {
     }
 
     .wwa-text {
-        font-size: 12px;
-        max-width: 290px;
+        font-size: 16px;
+        max-width: 340px;
     }
 
     .wwa-card h3 {
-        font-size: 42px;
+        font-size: 32px;
     }
 
     .wwa-card img {
@@ -506,7 +509,7 @@ body {
     }
 
     .wwa-card p {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .wwa-bottom-area h4 {

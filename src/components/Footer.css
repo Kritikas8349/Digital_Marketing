@@ -30,21 +30,21 @@
 }
 
 .top-heading {
-    font-family: 'Jomhuria', cursive;
-    font-size: 90px;
-    font-weight: 500;
-    line-height: 0.65;
+    font-family: 'Gabriela', serif;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1;
     color: #111;
     margin-bottom: 18px;
     max-width: 480px;
 }
 
 .top-subtext {
-    font-family: 'Kite One', sans-serif;
+    font-family: 'Gabriela', serif;
     font-size: 26px;
     line-height: 1.45;
     color: #222;
-    max-width: 340px;
+    max-width: 440px;
 }
 
 .top-img-box {
@@ -73,7 +73,7 @@
     border-radius: 8px;
     background: transparent;
     padding: 0 18px;
-    font-family: 'Kite One', sans-serif;
+   font-family: 'Gabriela', serif;
     font-size: 20px;
     color: #111;
     outline: none;
@@ -103,9 +103,9 @@
     border-radius: 50px;
     background: transparent;
     
-    font-family: 'Jomhuria', cursive;
-    font-size: 44px;
-    font-weight: 500;
+    font-family: 'Gabriela', serif;
+    font-size: 24px;
+    font-weight: 800;
     color: #111;
     
     cursor: pointer;
@@ -234,8 +234,8 @@
 @media(max-width:480px) {
 
     .top-heading {
-        line-height: 0.53;
-        font-size: 54px;
+        line-height: 1;
+        font-size: 30px;
         text-align: start;
         margin-left: 10px;
     }
@@ -255,7 +255,7 @@
 
     .top-btn {
         padding: 8px 22px;   /* vertical | horizontal */
-        font-size: 28px;
+        font-size: 20px;
         margin-top: 6px;
     }
 }
@@ -290,6 +290,7 @@
 /* LOGO */
 .footer__logo img {
     width: 150px;
+    margin-top: -20px;
     margin-bottom: 18px;
     transition: transform 0.3s ease;
 }

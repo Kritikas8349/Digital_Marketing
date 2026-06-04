@@ -24,12 +24,12 @@ import testimonial3 from "../assets/testimonial3.jpg";
 
 const faqData = [
     {
-        question: "What services does The Soul Solution offer?",
+        question: "What services does Wings digital media offer?",
         answer:
             "We offer end-to-end digital marketing services including social media management, branding, content creation, performance marketing, and website design — everything your brand needs to grow online."
     },
     {
-        question: "How is The Soul Solution different from other agencies?",
+        question: "How is Wings digital media different from other agencies?",
         answer:
             "We focus on creative strategy, real results, and personalized growth plans instead of one-size-fits-all marketing."
     },
@@ -125,7 +125,7 @@ const Home = () => {
             <section className="about">
 
                 <h2 className="about-title">ABOUT <br />
-                    THE SOUL SOLUTION</h2>
+                    Wings digital media</h2>
 
                 {/* Row 1 */}
                 <div className="about-row">
@@ -235,7 +235,7 @@ const Home = () => {
                     <h1 className="w-heading">Why Choose Us</h1>
 
                     <p className="w-subtitle">
-                        At The Soul Solution, we believe every brand has a story.
+                        At Wings digital media, we believe every brand has a story.
                         We turn that story into powerful digital experiences that
                         people actually connect with.
                     </p>
@@ -368,7 +368,7 @@ const Home = () => {
                                 <p>
                                     “Real growth. Real strategy. Real results.”
                                     <br />
-                                    Loved working with The Soul Solution —
+                                    Loved working with Wings digital media —
                                     highly professional and creative.
                                 </p>
                             </div>

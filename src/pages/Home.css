@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Baloo+2:wght@600;700;800&family=Poppins:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Baloo+2:wght@600;700;800&family=Kite+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Baloo+2:wght@400;700&family=Bebas+Neue&family=Bubblegum+Sans&family=Bungee&family=Chewy&family=Fredoka:wght@300..700&family=Lilita+One&family=Luckiest+Guy&family=Monoton&family=Permanent+Marker&family=Righteous&display=swap');
 
 * {
     margin: 0;
@@ -18,7 +19,7 @@ body {
 
 .home-section {
     width: 100%;
-    min-height: 100vh;
+    max-height: 100vh;
     /* background: #e9ddcf; */
     position: relative;
     overflow: hidden;
@@ -99,6 +100,7 @@ body {
 }
 
 .hero-right-img {
+    margin-top: -60px;
     width: 100%;
     max-width: 580px;
     object-fit: contain;
@@ -311,15 +313,15 @@ body {
 
 /* HEADINGS */
 .text h3 {
-    font-family: 'Jomhuria', cursive;
-    font-size: 58px;
+    font-family: 'Gabriela', serif;
+    font-size: 38px;
     margin-bottom: 10px;
-    font-weight: 500;
+    font-weight: 800;
 }
 
 /* PARAGRAPH */
 .text p {
-    font-family: 'Kite One', sans-serif;
+  font-family: 'Gabriela', serif;
     font-size: 20px;
     line-height: 1.5;
 }
@@ -346,7 +348,7 @@ body {
         font-size: 36px;
         -webkit-text-stroke: 12px #f4aa00;
         text-align: center;
-        line-height: 1.2;
+        line-height: 1.4;
     }
 
     .about-row {
@@ -384,7 +386,7 @@ body {
     }
 
     .text h3 {
-        font-size: 46px;
+        font-size: 25px;
         /* margin-bottom: -5px; */
         line-height: .6;
     }
@@ -580,19 +582,23 @@ body {
 
 /* Text */
 .service-card h2 {
-    font-family: 'Jomhuria', cursive;
-    font-size: 58px;
-    font-weight: 500;
+    font-family: 'Gabriela', serif;
+    font-size: 28px;
+    font-weight: 900;
     color: #111;
-    margin-bottom: 8px;
+    margin-bottom: 32px;
 }
 
 .center-card h2 {
-    font-size: 68px;
+   font-family: 'Gabriela', serif;
+    font-size: 34px;
+    font-weight: 900;
+    color: #111;
+    margin-bottom: 28px;
 }
 
 .service-card p {
-    font-family: 'Kite One', sans-serif;
+    font-family: 'Gabriela', serif;
     font-size: 18px;
     line-height: 1.45;
     color: #111;
@@ -712,8 +718,8 @@ body {
 
     /* Typography adjust */
     .service-card h2 {
-        font-size: 52px;
-        line-height: 0.6;
+        font-size: 30px;
+        line-height: 1;
         margin-bottom: 10px;
     }
 
@@ -803,7 +809,7 @@ body {
     max-width: 720px;
     margin: 30px auto 22px;
     text-align: center;
-    font-family: 'Kite One', sans-serif;
+    font-family: 'Gabriela', serif;
     font-size: 20px;
     line-height: 1.45;
     color: #222;
@@ -827,15 +833,15 @@ body {
 }
 
 .w-card h2 {
-    font-family: 'Jomhuria', cursive;
-    font-size: 52px;
-    font-weight: 500;
+    font-family: 'Gabriela', serif;
+    font-size: 32px;
+    font-weight: 800;
     color: #111;
     margin-bottom: 8px;
 }
 
 .w-card p {
-    font-family: 'Kite One', sans-serif;
+    font-family: 'Gabriela', serif;
     font-size: 20px;
     line-height: 1.45;
     color: #333;
@@ -928,8 +934,8 @@ body {
     }
 
     .w-card h2 {
-        font-size: 40px;
-        line-height: 0.6;
+        font-size: 25px;
+        line-height: 1;
 
     }
 
@@ -990,7 +996,7 @@ body {
 }
 
 .faq-question span:first-child {
-    font-family: 'Kite One', sans-serif;
+    font-family: 'Gabriela', serif;
     font-size: 20px;
     color: #111;
 }
@@ -1015,7 +1021,7 @@ body {
 }
 
 .faq-answer p {
-    font-family: 'Kite One', sans-serif;
+    font-family: 'Gabriela', serif;
     font-size: 17px;
     line-height: 1.45;
     color: #111;
@@ -1193,16 +1199,16 @@ body {
 }
 
 .t-content h2 {
-    font-family: 'Jomhuria', cursive;
-    font-size: 58px;
-    font-weight: 500;
+    font-family: 'Gabriela', serif;
+    font-size: 24px;
+    font-weight: 800;
     /* line-height: 1.05; */
     color: #111;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
 }
 
 .t-content p {
-    font-family: 'Kite One', sans-serif;
+    font-family: 'Gabriela', serif;
     font-size: 17px;
     line-height: 1.45;
     color: #333;
@@ -1319,7 +1325,9 @@ body {
     }
 
     .t-content h2 {
-        font-size: 32px;
+        font-size: 25px;
+        line-height: 1;
+        margin-bottom: 10px;
     }
 
     .t-content p {

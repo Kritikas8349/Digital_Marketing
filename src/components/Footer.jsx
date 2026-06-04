@@ -12,7 +12,7 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
-import logo1 from "../assets/logo_dig.png"
+import logo1 from "../assets/wings_logo.png"
 
 const Footer = () => {
     return (    

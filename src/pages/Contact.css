@@ -26,7 +26,7 @@
   }
   
   .subtitle {
-    font-family: 'Kite One', cursive;
+    font-family: 'Gabriela', serif;
     font-size: 20px;
     line-height: 1.4;
     color: #111;
@@ -39,7 +39,7 @@
     border-radius: 50px;
     border: 2px solid #f4aa00;
     background: transparent;
-    font-size: 45px;
+    font-size: 42px;
     font-weight: 500;
     cursor: pointer;
     transition: 0.3s ease;
@@ -106,7 +106,7 @@
 
     .contact__btn {
       padding: 8px 20px 4px;
-      font-size: 34px;
+      font-size: 25px;
     }
   
     .contact__image img {
@@ -152,9 +152,9 @@
   padding: 18px 20px;
   border-radius: 12px;
   border: 1.5px solid #f4a100;
-
+  font-family: 'Gabriela', serif;
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 500;
   color: #000;
 
   transition: all 0.3s ease;
@@ -203,6 +203,6 @@
   }
 
   .why__card {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
