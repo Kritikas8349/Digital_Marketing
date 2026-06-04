@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Kite+One&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -289,7 +289,7 @@
 
 /* LOGO */
 .footer__logo img {
-    width: 150px;
+    width: 130px;
     margin-top: -20px;
     margin-bottom: 18px;
     transition: transform 0.3s ease;
