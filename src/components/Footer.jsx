@@ -154,23 +154,23 @@ const Footer = () => {
       {/* Address */}
       <div className="footer__item">
         <FaMapMarkerAlt />
-        <span>Bhopal, Madhya Pradesh, India</span>
+        <span>Indore, Madhya Pradesh, India</span>
       </div>
 
       {/* Phone */}
       <div className="footer__item">
         <FaPhoneAlt />
-        <span>+91 98765 43210</span>
+        <span>+91 8359834266</span>
       </div>
 
       {/* Email */}
       <div className="footer__item">
         <FaEnvelope />
-        <span>info@thesoulsolution.com</span>
+        <span>info@wingsdigitalmedia.com</span>
       </div>
 
       {/* Social */}
-      <div className="footer__socials">
+      {/* <div className="footer__socials">
         <a href="https://facebook.com" target="_blank" rel="noreferrer">
           <FaFacebookF />
         </a>
@@ -182,7 +182,7 @@ const Footer = () => {
         <a href="https://youtube.com" target="_blank" rel="noreferrer">
           <FaYoutube />
         </a>
-      </div>
+      </div> */}
 
     </div>
 

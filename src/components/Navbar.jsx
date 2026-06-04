@@ -113,7 +113,7 @@ const Navbar = () => {
           <NavLink to="/contact" onClick={() => setMenuOpen(false)} className={({ isActive }) => isActive ? "active" : ""}>Contact Us</NavLink>
 
           <a
-            href="mailto:yourmail@example.com?subject=Website Inquiry"
+            href="mailto:info@wingsdigitalmedia.com?subject=Website Inquiry"
             onClick={() => setMenuOpen(false)}
           >
             <button className="contact-btn mobile-btn">
