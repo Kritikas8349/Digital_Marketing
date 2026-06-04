@@ -151,6 +151,7 @@ body {
 
 
     .about-container {
+        height: 50vh;
         gap: 18px;
     }
 
@@ -392,7 +393,7 @@ body {
     }
 
     .wwa-card h3 {
-        font-size: 62px;
+        font-size: 42px;
     }
 
     .wwa-card p {

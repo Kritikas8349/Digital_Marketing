@@ -82,9 +82,13 @@ const Navbar = () => {
         </ul>
 
         {/* Button */}
-        <Link to="/contact">
-          <button className="contact-btn">Get in touch</button>
-        </Link>
+        <a
+          href="mailto:info@wingsdigitalmedia.com?subject=Website Inquiry"
+        >
+          <button className="contact-btn">
+            Get in touch
+          </button>
+        </a>
 
         {/* Hamburger */}
         <div
@@ -108,11 +112,14 @@ const Navbar = () => {
 
           <NavLink to="/contact" onClick={() => setMenuOpen(false)} className={({ isActive }) => isActive ? "active" : ""}>Contact Us</NavLink>
 
-          <Link to="/contact" onClick={() => setMenuOpen(false)}>
+          <a
+            href="mailto:yourmail@example.com?subject=Website Inquiry"
+            onClick={() => setMenuOpen(false)}
+          >
             <button className="contact-btn mobile-btn">
               Get in touch
             </button>
-          </Link>
+          </a>
         </div>
       )}
 
